@@ -1,50 +1,76 @@
-# React + TypeScript + Vite
+# ATG test case
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Test task for ATG.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [General Info](#general-information)
+- [Screenshots](#screenshot)
+- [Technologies Used](#technologies-used)
+- [Setup](#setup)
+- [Available Scripts](#available-scripts)
+- [Areas for Improvement](#areas-for-improvement)
 
-## Expanding the ESLint configuration
+## General Information
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+User able to select betting type and get info about races, horses, time etc.
 
-- Configure the top-level `parserOptions` property like this:
+## Screenshot
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+![Example screenshot](./screeny.png)
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Technologies and libs Used:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- React
+- Typescript
+- Vite
+- react-range-slider-input
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Setup
+
+Environment requirements
+
+> The project uses Node.js v20 and npm v8.
+> The easiest way to manage different Node versions is nvm.
+
+NVM
+
+> Install NVM - link
+
+1. After the installation makes sure to close all Terminal instances.
+1. Currently project working with version 20 - in the terminal type in: `nvm use stable`
+1. Set default node version by typing this command in the terminal: `nvm alias default v20`
+1. npm version should be 8.0.0 and above - to install the latest version run this command in the terminal: `nvm install-latest-npm`
+
+Project installation
+
+1. In the terminal navigate to the root folder
+1. run `nvm use`
+1. run `npm i`
+1. Now you can run project in development mode using `npm start` command
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm dev`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+## Areas for Improvement
+
+1. Project should be covered by unit-tests at least 80%.
+2. Components should be well decomposed and separated by modules, using MVC architecture(choose another architecture if it's make sense for you).
+3. Apply some Styles managment lib according to next step requirements (desired styled-components or tailwind)
