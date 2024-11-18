@@ -1,0 +1,149 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+button:focus, input:focus {
+  outline: 0;
+}
+
+button {
+  background: #2B2B2B;
+  font-weight: 500;
+  border-radius: 8px;
+}
+
+button span {
+  margin-right: 4px
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.range-slider__range,
+.range-slider {
+  background: #2b2b2b19 !important;
+  margin-bottom: 5px;
+}
+
+.single-thumb .range-slider__thumb[data-lower] {
+  width: 0;
+}
+
+.single-thumb .range-slider__thumb {
+  background: #000 !important;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+}
+
+.controls-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.controls-wrapper button {
+  flex-basis: calc(50% - 5px);
+  flex-grow: 1;
+}
+
+.controls-wrapper .input-elem {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.input-elem input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.05);
+  border-color: rgba(0, 0, 0, 0.22);
+  color: #000;
+  font-weight: 500;
+  flex: 1 1 100%;
+}
+
+.input-elem label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  color: rgba(0, 0, 0, 0.42);
+  display: flex;
+  align-items: center;
+}
+
+.count-number {
+  font-size: 80px;
+  font-weight: 800;
+  color: #000
+}
+
+.auto-increment {
+  text-align: left;
+}
+
+.auto-increment button {
+  margin-bottom: 12px;
+}
+
+.label {
+  line-height: 22px;
+  margin-bottom: 5px;
+}
+
+.count-seconds {
+  color: #000;
+  font-weight: 500;
+}
