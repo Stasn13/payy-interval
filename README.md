@@ -1,6 +1,6 @@
-# ATG test case
+# Payy test case
 
-> Test task for ATG.
+> Live demo link [_here_](https://payy-interval.vercel.app/).
 
 ## Table of Contents
 
