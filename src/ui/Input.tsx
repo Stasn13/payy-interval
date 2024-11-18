@@ -7,7 +7,7 @@ interface InputProps {
 }
 const Input = ({ afterText="increment by", onChange, value }: InputProps) => {
 
-    const onInputChange = (e) => {
+    const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         onChange(e.target.value)
     }
 
