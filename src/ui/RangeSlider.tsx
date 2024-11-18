@@ -1,7 +1,7 @@
 import RangeSlider from 'react-range-slider-input';
 import 'react-range-slider-input/dist/style.css';
 
-export default function ({ onInput }: { onInput: () => void }) {
+export default function ({ onInput }: { onInput: (value: number[]) => void }) {
     return (
         <RangeSlider
             className="single-thumb thumb"
